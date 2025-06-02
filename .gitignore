@@ -1,0 +1,28 @@
+# Python cache and virtual environment
+__pycache__/
+*.py[cod]
+*.venv/
+venv/
+.env/
+.env*/
+
+# Discord bot token and secrets
+.env
+config.json
+*.token
+
+# Downloaded audio/video files (from pytube)
+*.m4a
+*.mp3
+*.mp4
+temp_*
+
+# IDE/Editor files (optional)
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# System files (Mac/Windows)
+.DS_Store
+Thumbs.db

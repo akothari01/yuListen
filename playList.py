@@ -9,7 +9,7 @@ class playList:
     
     def insert(self, playN):
         if self.head == None:
-            self.head = playN
+            self.head = playNode(playN)
         else:
             node = self.head
             while node.next != None:
@@ -18,8 +18,8 @@ class playList:
 
     def insertImmediate(self, playN):
         node = self.head.next
-        self.head.next = playN
-        playN.next = node
+        self.head.next = playNode(playN)
+        self.head.next.next = node
     
     def removeCurrent(self):
         self.head = self.head.next
